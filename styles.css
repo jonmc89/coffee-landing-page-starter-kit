@@ -9,7 +9,14 @@
 @font-face {
     font-family: Poppins;
     src: url(./assets/Fonts/Poppins-Medium.ttf) format("truetype");
-    font-weight: 100 900;
+}
+@font-face {
+    font-family: Poppins-Bold;
+    src: url(./assets/Fonts/Poppins-Bold.ttf) format("truetype");
+}
+@font-face {
+    font-family: Poppins-Light;
+    src: url(./assets/Fonts/Poppins-Light.ttf) format("truetype");
 }
 
 :root {
@@ -22,7 +29,28 @@
     --Black: #000;
 }
 
+/* || Typography */
+
+h1 {
+    font-family: "Poppins-Bold", Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+.opening-text {
+    font-family: "Poppins-Light", Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 150%;
+}
+
+.order-now-btn {
+    font-weight: bold;
+}
+
 /* || Main Styling */
+
+body {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
 
 /* Header */
 
@@ -79,4 +107,67 @@ header {
     transform: translateY(-50%) translate(-50%);
     left: 50%;
     width: 15rem;
+}
+
+/* Opening Section */
+
+.opening-section {
+    padding: 1.5rem;
+}
+
+h1 {
+    margin-block-end: 1.2rem;
+    width: 80%;
+}
+
+.text-yellow {
+    color: var(--MacaroniCheese);
+}
+
+.opening-text {
+    margin-block-end: 1rem;
+    width: 85%;
+}
+
+.order-now-btn {
+    align-items: center;
+    background-color: var(--BrownTumbleweed);
+    border-radius: 2rem;
+    border: none;
+    color: var(--White);
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    width: auto;
+}
+
+.cart-icn-container {
+    background-color: var(--MacaroniCheese);
+    border-radius: 50%;
+    display: flex;
+    padding: 0.4rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cart-icn {
+    height: auto;
+    transition: filter 0.2s ease-in-out;
+    width: 0.8rem;
+}
+
+.order-now-btn:hover {
+    background-color: var(--MacaroniCheese);
+    color: var(--Black);
+}
+
+.order-now-btn:hover .cart-icn-container {
+    background-color: var(--BrownTumbleweed);
+    color: var(--White);
+}
+
+.order-now-btn:hover .cart-icn {
+    filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(523%)
+        hue-rotate(298deg) brightness(115%) contrast(100%);
 }
