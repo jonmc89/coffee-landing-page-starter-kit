@@ -7,6 +7,17 @@
         <title>WebDevDaily-Coffee Shop Landing Page</title>
     </head>
     <body>
+        <div id="mobileMenu" class="mobile-nav">
+            <img
+                id="closeMenu"
+                class="close-menu-icon"
+                src="./assets/xmark-solid-full.svg"
+                alt=""
+            />
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Menu</a>
+            <a class="nav-link" href="#">Delivery</a>
+        </div>
         <header>
             <div class="header-left">
                 <img
@@ -17,6 +28,7 @@
             </div>
             <div class="header-right">
                 <img
+                    id="mobileMenuBtn"
                     class="menu-btn"
                     src="./assets/bars-solid-full.svg"
                     alt=""
@@ -48,9 +60,38 @@
                         />
                     </div>
                 </button>
- 
+            </section>
+            <section class="options-section">
+                <div class="options-item">
+                    <img
+                        class="options-icon"
+                        src="./assets/hot-coffee.png"
+                        alt=""
+                    />
+                    <h2 class="options-title">HOT COFFEE</h2>
+                </div>
+                <div class="options-item">
+                    <img
+                        class="options-icon"
+                        src="./assets/cold-coffee.png"
+                        alt=""
+                    />
+                    <h2 class="options-title">COLD COFFEE</h2>
+                </div>
+                <div class="options-item">
+                    <img class="options-icon" src="./assets/tea.png" alt="" />
+                    <h2 class="options-title">TEA</h2>
+                </div>
+                <div class="options-item">
+                    <img
+                        class="options-icon"
+                        src="./assets/dessert.png"
+                        alt=""
+                    />
+                    <h2 class="options-title">DESSERT</h2>
                 </div>
             </section>
         </main>
+        <script src="script.js"></script>
     </body>
 </html>

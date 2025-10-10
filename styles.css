@@ -46,10 +46,66 @@ h1 {
     font-weight: bold;
 }
 
+.options-title {
+    font-size: 1rem;
+}
+
 /* || Main Styling */
 
 body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.mobile-nav {
+    align-items: center;
+    background-color: var(--White);
+    box-shadow: 0 1rem 3rem grey;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 20rem;
+    justify-content: center;
+    left: 50%;
+    opacity: 0;
+    padding: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    transform: translateX(-50%);
+
+    width: 90%;
+    z-index: 1;
+}
+
+.close-menu-icon {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(68%) saturate(554%)
+        hue-rotate(2deg) brightness(95%) contrast(98%);
+    height: auto;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    transition: filter 0.2s ease-in-out;
+    width: 2.5rem;
+}
+
+.close-menu-icon:hover {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(5693%)
+        hue-rotate(335deg) brightness(95%) contrast(67%);
+}
+
+.mobile-nav-unhide {
+    opacity: 1;
+    z-index: 3;
+}
+
+.nav-link {
+    color: var(--BrownTumbleweed);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--MacaroniCheese);
 }
 
 /* Header */
@@ -80,9 +136,18 @@ header {
 }
 
 .menu-btn {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(68%) saturate(554%)
+        hue-rotate(2deg) brightness(95%) contrast(98%);
     cursor: pointer;
     height: auto;
+    transition: filter 0.2s ease-in-out;
     width: 2rem;
+    z-index: 2;
+}
+
+.menu-btn:hover {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(4%) saturate(5693%)
+        hue-rotate(335deg) brightness(95%) contrast(67%);
 }
 
 .hero-grid {
@@ -116,6 +181,7 @@ header {
 }
 
 h1 {
+    color: var(--BrownTumbleweed);
     margin-block-end: 1.2rem;
     width: 80%;
 }
@@ -125,6 +191,7 @@ h1 {
 }
 
 .opening-text {
+    color: var(--BrownTumbleweed);
     margin-block-end: 1rem;
     width: 85%;
 }
@@ -170,4 +237,23 @@ h1 {
 .order-now-btn:hover .cart-icn {
     filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(523%)
         hue-rotate(298deg) brightness(115%) contrast(100%);
+}
+
+/* Options Section */
+
+.options-section {
+    background-color: var(--AlbescentWhite);
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 2fr);
+    text-align: center;
+}
+
+.options-item {
+    cursor: pointer;
+    padding: 1.2rem;
+}
+
+.options-icon {
+    height: auto;
+    width: 3rem;
 }
