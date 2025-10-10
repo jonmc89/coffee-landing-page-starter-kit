@@ -1,0 +1,25 @@
+/* || Global Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/Fonts/Poppins-Medium.ttf) format("truetype");
+    font-weight: 100 900;
+}
+
+:root {
+    --White: #fff;
+    --AlbescentWhite: #f6ebda;
+    --MacaroniCheese: #ffbd7f;
+    --SepiaSkin: #a0583c;
+    --RomanCoffee: #835e4c;
+    --BrownTumbleweed: #2f2105;
+    --Black: #000;
+}
+
+/* || Main Styling */
