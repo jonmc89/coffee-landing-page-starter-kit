@@ -23,3 +23,60 @@
 }
 
 /* || Main Styling */
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    position: relative;
+}
+
+.header-left,
+.header-right {
+    height: 20rem;
+    padding: 1rem;
+}
+
+.header-right {
+    align-items: start;
+    background-color: var(--MacaroniCheese);
+    display: flex;
+    justify-content: end;
+}
+
+.page-logo {
+    cursor: pointer;
+    height: auto;
+    width: 3rem;
+}
+
+.menu-btn {
+    cursor: pointer;
+    height: auto;
+    width: 2rem;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+}
+
+.hero-left-side {
+    background-color: var(--White);
+    height: 10rem;
+}
+
+.hero-right-side {
+    background-color: var(--MacaroniCheese);
+    height: 10rem;
+}
+
+.hero-coffee-img {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translate(-50%);
+    left: 50%;
+    width: 15rem;
+}
