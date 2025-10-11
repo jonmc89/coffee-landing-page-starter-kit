@@ -429,7 +429,7 @@ h1 {
 /* Menu Section */
 
 .menu-section {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0;
 }
 
 .menu-container {
@@ -490,7 +490,7 @@ h1 {
     border-radius: 0.5rem;
     height: auto;
     margin-block-end: 1.5rem;
-    width: 15rem;
+    width: 18rem;
 }
 
 .about-title,
@@ -538,4 +538,122 @@ h1 {
 
 .about-button:active {
     opacity: 0.7;
+}
+
+/* Footer Section */
+
+footer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.footer-logo-container {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin-block-end: 1.2rem;
+    width: 100%;
+}
+
+.footer-logo {
+    height: auto;
+    width: 4rem;
+}
+
+.footer-logo-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}
+
+hr {
+    margin-block-end: 1.2rem;
+    width: 80%;
+    border: 0.1rem solid var(--BoxShaddow);
+    opacity: 0.5;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    margin-block-end: 1rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: var(--RomanCoffee);
+    font-family: "Poppins-Bold", Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+    color: var(--SepiaSkin);
+}
+
+.newsletter-link {
+    text-decoration: none;
+    color: var(--Black);
+    font-family: "Poppins-Bold", Arial, Helvetica, sans-serif;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 1.1rem;
+}
+
+.newsletter-link:hover {
+    opacity: 1;
+}
+
+.subscribe-container {
+    align-items: start;
+    display: flex;
+    justify-content: start;
+    margin-block-end: 3rem;
+    width: 100%;
+}
+
+input {
+    background-color: var(--AlbescentWhite);
+    border: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: var(--BrownTumbleweed);
+    border-bottom-left-radius: 0.3rem;
+    border-top-left-radius: 0.3rem;
+    width: 14rem;
+}
+
+input::placeholder {
+    color: var(--RomanCoffee);
+}
+
+.subscribe-btn {
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--RomanCoffee);
+    color: var(--AlbescentWhite);
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.socials-container {
+    align-items: center;
+    display: flex;
+    gap: 1.2rem;
+    margin-block-end: 2rem;
+}
+
+.social-logo {
+    cursor: pointer;
+    transition: filter 0.2s ease-in-out;
+}
+
+.social-logo:hover {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(6%) saturate(2786%)
+        hue-rotate(335deg) brightness(97%) contrast(85%);
 }
