@@ -160,6 +160,10 @@ header {
         hue-rotate(335deg) brightness(95%) contrast(67%);
 }
 
+.menu-btn:active {
+    opacity: 0.7;
+}
+
 .hero-grid {
     display: grid;
     grid-template: 1fr / repeat(2, 1fr);
@@ -374,6 +378,10 @@ h1 {
     width: 7rem;
 }
 
+.card-button:active {
+    opacity: 0.7;
+}
+
 /* Rewards Section */
 
 .reward-section {
@@ -466,4 +474,68 @@ h1 {
 
 .menu-card-title {
     margin-block-end: 1rem;
+}
+
+/* About Section */
+
+.about-section {
+    align-items: center;
+    background-color: var(--AlbescentWhite);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+.about-image {
+    border: 0.2rem solid var(--White);
+    border-radius: 0.5rem;
+    height: auto;
+    margin-block-end: 1.5rem;
+    width: 15rem;
+}
+
+.about-title,
+.about-subtitle {
+    color: var(--BrownTumbleweed);
+}
+
+.about-text {
+    margin-bottom: 1.2rem;
+    text-align: start;
+    width: 95%;
+}
+
+.about-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-block-end: 1.5rem;
+}
+
+.about-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    margin-block-end: 1.5rem;
+}
+
+.about-content {
+    font-family: "Poppins-Light", Arial, Helvetica, sans-serif;
+    margin-block-end: 1.2rem;
+}
+
+.about-button {
+    background-color: var(--BrownTumbleweed);
+    border-radius: 2rem;
+    border: none;
+    color: var(--MacaroniCheese);
+    cursor: pointer;
+    padding: 0.8rem 1.3rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.about-button:hover {
+    background-color: var(--MacaroniCheese);
+    color: var(--BrownTumbleweed);
+}
+
+.about-button:active {
+    opacity: 0.7;
 }
