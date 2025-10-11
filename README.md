@@ -1,51 +1,36 @@
 # Coffee Landing Page
 
-## Welcome! 👋
+## Welcome!
 
-In this project, you'll build a coffee themed landing paged, Coffee Love.
+This was my attempt at the Coffee Landing Page set by Web Dev Daily.
 
-Utilize your flexbox & grid skills in this HTML and CSS-only landing page. The layout shifts for mobile providing a great way to practice your responsive skills, along with a tricky layout design for the hero.
+## Overview
 
-## Tasks
+-   Add screenshot
 
-1. Build out this landing page and get it looking as close to the design as possible.
-2. Create responsive layout for mobile and desktop based on provided design.
-3. Implement hover states for interactive elements.
+## Built with
 
-Use any tools you'd like to help you complete the project. If you've got something you'd like to practice, feel free to try it!
+-   HTML
+-   CSS
+-   JavaScript
+-   Mobile First Design
 
-# Style Guide
+## Features
 
-## Layout
+### Mobile Navigation Menu
 
-The designs were created to the following widths:
+For small devices the menu is reduced to a button which will trigger a menu when clicked, and hide when closed.
 
-- Mobile: 414px
-- Desktop: 1440px
+![Mobile Menu](Mobile%20Menu.png)
 
-## Typography
+### Slideable Carousel Sections
 
-- Poppins: [Google Fonts](https://fonts.google.com/specimen/Poppins) (300, 400, 600, 700)
+One smaller devices the item selectiong is displayed with a slidable carousel.
 
-## Colors
+![Slide Carousel](Slide%20Carousel.png)
 
-- White: #fff
-- Albescent White: #F6EBDA
-- Macaroni & Cheese: #FFBD7F
-- Sepia Skin: #A0583C
-- Roman Coffee: #835E4C
-- Brown Tumbleweed: #2F2105
-- Black: #000
+## Useful Links
 
-## Icons
+Tips for making the items sections carousel
 
-We provide the required icons but, if you prefer, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [Iconify](https://iconify.design/)
-
-# Have feedback for us?
-
-We're always looking to improve our projects and challenges on WebDevDaily. So if you have anything you'd like to mention, please email us webdevdailycontact@gmail.com.
-
-**Happy coding!** 🚀
+[MDN Docs - CSS Carousel](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_overflow/CSS_carousels)

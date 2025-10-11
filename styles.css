@@ -657,3 +657,7 @@ input::placeholder {
     filter: brightness(0) saturate(100%) invert(38%) sepia(6%) saturate(2786%)
         hue-rotate(335deg) brightness(97%) contrast(85%);
 }
+
+/* || Media Queries */
+
+/* Desktop View */
